@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Our Lab 5 Example</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Step 1</h1>
+        <svg width="300" height="300">
+            <rect x="50" y="50" width="150" height="150"
+                  style="fill:blue;stroke:pink;stroke-width:5;fill-opacity:0.1;stroke-opacity:0.9" />
+
+            <line x1="96" y1="50" x2="96" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="150" y1="50" x2="150" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+            <line x1="50" y1="96" x2="200" y2="96" style="stroke:rgb(255,0,0);stroke-width:2" />
+            <line x1="50" y1="150" x2="200" y2="150" style="stroke:rgb(255,0,0);stroke-width:2" />
+
+            <rect onclick="squaretocircle()" id="square11" x="57" y="57" width="30" height="30" />
+            <circle cx="73" cy="73" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square12" x="107" y="57" width="30" height="30" />
+            <circle cx="123" cy="73" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square13" x="157" y="57" width="30" height="30" />
+            <circle cx="173" cy="73" r="13" stroke="black" stroke-width="3" fill="red" />
+
+            <rect id="square21" x="57" y="107" width="30" height="30" />
+            <circle cx="73" cy="123" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square22" x="107" y="107" width="30" height="30" />
+            <circle cx="123" cy="123" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square23" x="157" y="107" width="30" height="30" />
+            <circle cx="173" cy="123" r="13" stroke="black" stroke-width="3" fill="red" />
+
+            <rect id="square31" x="57" y="157" width="30" height="30" />
+            <circle cx="73" cy="173" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square32" x="107" y="157" width="30" height="30" />
+            <circle cx="123" cy="173" r="13" stroke="black" stroke-width="3" fill="red" />
+            <rect id="square33" x="157" y="157" width="30" height="30" />
+            <circle cx="173" cy="173" r="13" stroke="black" stroke-width="3" fill="red" />
+        </svg>
+        
+        <h1>Notes</h1>
+        <ul>
+            <li>Square by svg</li>
+            <li>Lines in the Square by svg</li>
+            <li>Square in the grid by svg</li>
+        </ul>
+
+        <h1>To Do</h1>
+        <ul>
+            <li>Change shape</li>
+        </ul>
+
+        <!------<script type="text/javascript">alert();
+            function squaretocircle(id) {
+                was planning to gide all circles on script load and then show 1 on click event on square.
+
+            }
+        </script>---->
+       
+    </body>
+</html>
