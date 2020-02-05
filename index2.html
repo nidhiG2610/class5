@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+ 
+    <div>
+        <h1> Step-2: Added circles on clicked square.</h1>
+
+    </div>
+
+    <svg height="500" width="400" xmlns="http://www.w3.org/2000/svg">
+
+
+        <rect width="150" x="25" y="10" height="120"  style="fill:none;stroke:black;stroke-width:1;" />
+        <line x1="25" y1="90" x2="175" y2="90" style="stroke:black;stroke-width:1" />
+        <line x1="25" y1="50" x2="175" y2="50" style="stroke:black;stroke-width:1" />
+
+        <line x1="75" y1="130" x2="75" y2="10" stroke="black" stroke-width="1"></line>
+        <line x1="125" y1="130" x2="125" y2="10" stroke="black" stroke-width="1"></line>
+
+
+        <rect id="rect_1"  x="30" y="15" width="40" height="30" style="display:initial;fill:none;stroke:black;stroke-width:1;" onclick="alert('You have clicked the circle.')"/>
+        <circle class="circle_1" cx="50" cy="30" r="10" stroke="black" stroke-width="1" fill="none" style="display:none;" />
+        
+
+        <rect id="rect_2" pointer-events="visiblePainted" onclick="replaceWithCircle(this)" x="80" y="15" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="100" cy="30" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_3" x="130" y="15" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="150" cy="30" r="10" stroke="black" stroke-width="1" fill="none" />
+
+
+
+        <rect class="rect_4" x="30" y="55" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="50" cy="70" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_5" x="80" y="55" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="100" cy="70" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_6" x="130" y="55" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="150" cy="70" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_7" x="30" y="95" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="50" cy="110" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_8" x="80" y="95" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="100" cy="110" r="10" stroke="black" stroke-width="1" fill="none" />
+
+        <rect class="rect_9" x="130" y="95" width="40" height="30" style="fill:none;stroke:black;stroke-width:1;" />
+        <circle cx="150" cy="110" r="10" stroke="black" stroke-width="1" fill="none" />
+
+
+    </svg>
+
+
+    <p>
+        <h2>Step:2</h2>
+        1. Created circle in each square.
+        2. Added script to click the square and show up the circle.
+
+    </p>
+
+
+
+
+
+    <script type="text/javascript">
+         document.querySelector('rect').addEventListener('click', (e) => {
+      e.target.style.fill = getColor()
+        alert('hii');
+    })
+    document.getElementById("rect_1").onclick = replaceWithCircle;
+    document.getElementById("rect_2").onclick = replaceWithCircle;
+        function replaceWithCircle(){
+        this.style.display="none";
+        this.nextSibling.style.display="initial";
+        }
+
+    function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+    </script>
+</body>
+</html>
